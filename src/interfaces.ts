@@ -3,3 +3,14 @@ export interface IUser{
     name: string;
     email: string;
 }
+
+export interface IField{
+    key: string;
+    required?: boolean;
+    min?: number;
+    max?: number;
+    regex?: {
+        expression: RegExp,
+        message: string;
+    }
+}
